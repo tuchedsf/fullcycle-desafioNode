@@ -1,0 +1,6 @@
+.DS_Store
+/mysql
+/laravel
+node/package-lock.json
+docker-compose.laravel.yaml
+node_modules
