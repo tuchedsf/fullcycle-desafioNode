@@ -1,12 +1,18 @@
-#Desafio 2 módulo docker.
+# Desafio 2 módulo docker.
 
-comando para execução:
+desafio consiste em subir atraves do docker-compose um container mysql para banco, node aplicacao e ngnix como proxy.
 
+irá subir 3 containers:
+- mysql banco
+- node aplicação
+- ngnix proxy
+
+### Para rodar a aplicação utilize o docker-compose.
 ```
 docker-compose up -d
 ```
 
-irá subir 3 aplicações:
-- mysql banco
-- node aplicação
-- ngnix proxy
+### Para acessar a aplicação
+```
+http://localhost:8080
+```
