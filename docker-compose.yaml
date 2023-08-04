@@ -20,8 +20,8 @@ services:
       context: node
       dockerfile: Dockerfile.prod
     container_name: app
-    entrypoint: dockerize -wait tcp://db:3306 -timeout 20s docker-entrypoint.sh
-    command: node index.js
+    entrypoint: dockerize -wait tcp://db:3306 -timeout 30s docker-entrypoint.sh
+    command: bash -c "npm install && node index.js"
     networks: 
       - node-network
     volumes: 
